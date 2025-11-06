@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="assets/bs.css" rel="stylesheet">
+    <script src="assets/bs.js"></script>
+    <link rel="stylesheet" href="assets/bs-icons.css">
     <title>IoT</title>
 </head>
 <body>
-  https://placehold.co/840x472
+
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <!-- Hlavní horní lišta -->
+        <div class="d-flex justify-content-between align-items-center border-bottom py-2 mb-3">
+            <div><strong>Pslib IoT Dashboard</strong> </div>
+            <div>
+                <a><strong>Dům</strong></a>
+                <a>Garáž</a>
+                <a>Zahrada</a>
+            </div>
+            <div>3.1.2025, 17:25</div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar -->
+          
+            <div class="col-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active"><i class="bi bi-house-gear"></i> Hlavní panel</a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-bell"></i> Oznámení <span class="badge bg-primary ms-2">2</span></a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-hdd"></i> Moje zařízení</a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-sliders"></i> Nastavení</a>
+                </div>
+            </div>
+          
+            <!-- Hlavní obsah -->
+            <div class="col-10">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5>Teplota - hlavní chodba</h5>
+                                <p class="fs-4 mb-0">23.4 °C</p>
+                                <p>Další měření za: 5 minut</p>
+                                <button class="btn btn-primary">Změřit teď</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5>Teplota - kuchyně</h5>
+                                <p class="fs-4 mb-0">25.2 °C</p>
+                                <p>Další měření za: 12 minut</p>
+                                <button class="btn btn-primary">Změřit teď</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zámky -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="card text-center border-danger">
+                            <div class="card-body">
+                                <h5>Přední vchod</h5>
+                                <p><i class="bi bi-unlock" style="font-size: 2rem;"></i></p>
+                                <p>Odemknuto</p>
+                                <button class="btn btn-success">Zamknout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center border-success">
+                            <div class="card-body">
+                                <h5>Přední vchod</h5>
+                                <p><i class="bi bi-lock" style="font-size: 2rem;"></i></p>
+                                <p>Zamknuto</p>
+                                <button class="btn btn-warning">Odemknout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamery -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5>Kamera Západ</h5>
+                                <img src="screen/Dashboard-w1920.png" class="img-fluid" alt="Kamera Západ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5>Kamera Východ</h5>
+                                <img src="screen/Dashboard-w1920.png" class="img-fluid" alt="Kamera Východ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5>Kamera Sever</h5>
+                                <img src="screen/Dashboard-w1920.png" class="img-fluid" alt="Kamera Sever">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
